@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hridoy Sheikh">
+    <link rel="stylesheet" href="style.css">
+    <title>Tempareture Converter</title>
+</head>
+<body>
+    <header>
+        <h1>Convert All Tempareture</h1>
+    </header>
+    <div class="content">
+        <div id="input_sec">
+            <select title="Click for select Degree" class="selector" id="selectItem">
+                <option value="Degree" disabled selected>Degree</option>
+                <option title="Click for Convert Celsius" value="cel">Celsius</option>
+                <option title="Click for Convert Fahrenheit" value="fah">Fahrenheit</option>
+                <option title="Click for Convert Kelvin" value="kel">Kelvin</option>
+                <option title="Click for Convert Rankine" value="ran">Rankine</option>
+                <option title="Click for Convert Romer" value="ro">Romer</option>
+            </select>
+            <input type="number" name="myInput" id="myInput" title="Input Your Degree Here:">
+        </div>
+        <input id="btn" type="submit" onclick="myfunction()" value="Click For result" title="Click For Result's">
+        <div class="output_sec">
+            <p id="res1" class="out"></p>
+            <p id="res2" class="out"></p> <br> <br> <br> <br>
+            <p id="res3" class="out"></p>
+            <p id="res4" class="out"></p>
+        </div>
+    </div>
+
+
+    
+    <script src="javaScript.js"></script>
+</body>
+</html>

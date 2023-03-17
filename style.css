@@ -1,0 +1,78 @@
+:root{
+    --out_display: inline-block; 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+header h1{
+    text-align: center;
+    padding: 1% 7%;
+    margin: 1% 7%;
+    background-color: #fffefe;
+    border-radius: 10px;
+}
+
+.selector{
+    height: 50px;
+    width: 180px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 1px 5px;
+    font-size: 25px;
+}
+
+#myInput{
+    height: 50px;
+    width: 280px;
+    overflow: hidden;
+    margin: auto;
+    padding: 1px 5px;
+    font-size: 25px;
+    position: static;
+}
+
+.out{
+    max-height: 100px;
+    width: 24%;
+    overflow-y: scroll;
+    margin: 10px;
+    padding: 1px 5px;
+    font-size: 25px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    display: var(--out_display);
+    background-color: #f9f9f9;
+}
+
+#btn{
+    height: 50px;
+    width: 180px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 1px 5px;
+    font-size: 15px;
+    background-color: #ffffffec;
+    float: right;
+}
+
+#btn:hover{
+    background-color: #f9f9f9;
+    font-size: 25px;
+    transition: 0.2s ease-out;
+}
+
+@media screen and (max-width: 550px){
+    :root{
+        --out_display: block;
+    }
+    br{
+        display: none;
+    }
+}
